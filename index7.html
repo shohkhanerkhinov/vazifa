@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: flex;
+            gap: 20px;
+        }
+        .div{
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            gap: 10px;
+        }
+        #uniqueBt{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+    </div>
+    <button id="uniqueBtn">Yagona asosiy button</button>
+
+
+
+    <script>
+        // FOREACHGA TEKSHIRUV QOYA OLMADIM MING BOR UZUR NIMAGADUR OHSHAMAYAPTI 
+        // (CHATGPT) GA BERSAM BUNI HATO DEYAPTI
+        const dellButtons = document.querySelectorAll('#dellBtn'); 
+        const uniqueBtn = document.querySelector('#uniqueBtn'); 
+        
+        dellButtons.forEach(dellbtn => {
+            dellbtn && dellbtn.addEventListener('click' , function () {
+                const meinBtn = dellbtn.previousElementSibling;
+                meinBtn.style.display = 'none'
+            })
+        });
+
+        uniqueBtn.addEventListener('click', function () {
+            const mainBtn = document.querySelectorAll('#meinBtn');
+            mainBtn.forEach(btn => {
+                btn.style.display = 'block'
+            });            
+        })
+    </script>
+</body>
+</html>

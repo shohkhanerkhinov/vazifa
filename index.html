@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rasim qoshish</title>
+    <style>
+        .content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #block {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: antiquewhite;
+        }
+
+        #btn {
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            display: block;
+            margin: auto;
+            margin-top: 100px;
+            transition: all 0.5s;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: rgba(0, 255, 255, 0);
+            border: 0.2px solid black;
+        }
+
+        img {
+            display: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rasim qoyish uchun "+"ni bosin</h1><br>
+    <div class="content">
+        <div id="block">
+            <img src="" alt="img" id="image">
+            <button id="btn">+</button>
+        </div>
+        <div id="block">
+            <img src="" alt="img" id="image">
+            <button id="btn">+</button>
+        </div>
+        <div id="block">
+            <img src="" alt="img" id="image">
+            <button id="btn">+</button>
+        </div>
+        <div id="block">
+            <img src="" alt="img" id="image">
+            <button id="btn">+</button>
+        </div>
+
+    </div>
+
+    <script>
+        const blocks = document.querySelectorAll('#block');
+        const btn = document.querySelectorAll('#btn');
+
+        btn.forEach((button, index) => {
+            button && button.addEventListener('click', function () {
+                console.log('ishladi');
+                const block = blocks[index];
+                const image = block.querySelector('#image');
+
+                image.src = 'https://picsum.photos/300/300';
+                image.style.display = 'block';
+                button.style.display = 'none';
+            });
+        });
+
+        // KOMENT = har bir btn ga boshqa boshqa img qila olmadim
+    </script>
+</body>
+
+</html>

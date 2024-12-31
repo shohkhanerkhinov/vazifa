@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>BMW</li>
+        <li>Merc</li>
+        <li>Nissan GTR</li>
+    </ul>
+
+
+    <script>
+        const title = document.querySelectorAll('#list li');
+
+        // console.log(title);
+
+        title.length > title.forEach(title => {
+            title && title.addEventListener('click',function () {
+            console.log('parent', this.parentNode);
+            console.log('prev sibling' ,this.previousElementSibling);
+            console.log('next sibling' ,this.nextElementSibling);
+            console.log('child' ,this.childNodes);
+            })
+        })
+    </script>
+</body>
+</html>

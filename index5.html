@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            max-width: 300px;
+            border: 2px solid greenyellow;
+            border-radius: 12px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <input type="checkbox" id="checkbox">
+    <button id="btn">yagi paragrof qoshish</button>
+
+    <script>
+        const card = document.querySelector('.card');
+        const btn = document.querySelector('#btn');
+        const checkbox = document.querySelector('#checkbox');
+
+        btn && btn.addEventListener('click', function () {
+            const p = document.createElement('p');
+            p.innerHTML = 'qandaydir element';
+
+            if (checkbox.checked) {
+                card.prepend(p);
+            }else{
+                card.append(p)
+            }
+        })
+    </script>
+</body>
+</html>

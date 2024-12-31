@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document tex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #block {
+            max-width: 230px;
+            padding: 10px;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+
+        #btn {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            transition: background-color 0.3s;
+        }
+
+        #btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="block">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, unde! Omnis reprehenderit similique
+            obcaecati, accusantium voluptates numquam, doloremque aliquam deleniti alias, placeat temporibus eum rem
+            quas ad sit tempore sequi.</p>
+    </div>
+    <button id="btn">almashtirish</button>
+    <div id="block">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, unde! Omnis reprehenderit similique
+            obcaecati, accusantium voluptates numquam, doloremque aliquam </p>
+    </div>
+
+    <script>
+        const block = document.querySelectorAll('#block');
+        const button = document.querySelector('#btn');
+
+        button && button.addEventListener('click', () => {
+            const blockOneP = block[0].querySelector('p').textContent;
+            const blockTwoP = block[1].querySelector('p').textContent;
+
+            block[0].querySelector('p').textContent = blockTwoP;
+            block[1].querySelector('p').textContent = blockOneP;
+        });
+
+        // KOMENT = ozimni codlarim uzunlashib keti shuning uchun aptimal yechim kirittim
+        // albatta chatGPT yordamida organib oldim
+    </script>
+</body>
+
+</html> 
+
+
