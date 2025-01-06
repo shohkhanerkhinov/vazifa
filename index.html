@@ -5,47 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rasim qoshish</title>
-    <style>
-        .content {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        #block {
-            width: 300px;
-            height: 300px;
-            border: 1px solid black;
-            border-radius: 8px;
-            background-color: antiquewhite;
-        }
-
-        #btn {
-            width: 100px;
-            height: 100px;
-            font-size: 50px;
-            display: block;
-            margin: auto;
-            margin-top: 100px;
-            transition: all 0.5s;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        #btn:hover {
-            background-color: rgba(0, 255, 255, 0);
-            border: 0.2px solid black;
-        }
-
-        img {
-            display: none;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+    <!-- task 1 -->
+    <h2>_____________________________ </h2>
     <h1>Rasim qoyish uchun "+"ni bosin</h1><br>
     <div class="content">
         <div id="block">
@@ -64,27 +29,219 @@
             <img src="" alt="img" id="image">
             <button id="btn">+</button>
         </div>
-
     </div>
 
-    <script>
-        const blocks = document.querySelectorAll('#block');
-        const btn = document.querySelectorAll('#btn');
+    <!-- task 2 -->
+    <h2>_____________________________ </h2>
 
-        btn.forEach((button, index) => {
-            button && button.addEventListener('click', function () {
-                console.log('ishladi');
-                const block = blocks[index];
-                const image = block.querySelector('#image');
+    <ul id="list" style="margin-left: 20px; margin-top: 20px;">
+        <li>BMW</li>
+        <li>Merc</li>
+        <li>Nissan GTR</li>
+    </ul>
 
-                image.src = 'https://picsum.photos/300/300';
-                image.style.display = 'block';
-                button.style.display = 'none';
-            });
-        });
+    <!-- task 3 -->
+    <h2>_____________________________ </h2>
 
-        // KOMENT = har bir btn ga boshqa boshqa img qila olmadim
-    </script>
+    <div id="block2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, unde! Omnis reprehenderit similique
+            obcaecati, accusantium voluptates numquam, doloremque aliquam deleniti alias, placeat temporibus eum rem
+            quas ad sit tempore sequi.</p>
+    </div>
+    <button id="btn2">almashtirish</button>
+    <div id="block2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, unde! Omnis reprehenderit similique
+            obcaecati, accusantium voluptates numquam, doloremque aliquam </p>
+    </div>
+
+    <!-- task 4  -->
+    <h2>_____________________________ </h2>
+
+    <button id="btn3">Tugma 1</button>
+    <button id="btn3">Tugma 2</button>
+    <button id="btn3">Tugma 3</button>
+    <button id="btn3">Tugma 4</button>
+
+    <!-- task 5 -->
+    <h2>_____________________________ </h2>
+
+    <div class="card">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <label for="tanlash">tapadan</label>
+    <input type="checkbox" name="tanlash" id="checkbox" style="margin: 50px;">
+    <button id="btn4" style="margin: 50px;">yagi paragrof qoshish</button>
+
+    <!-- task 6 -->
+    <h2>_____________________________ </h2>
+
+    <div class="block3"></div>
+    <button id="btnLeft">------left-----</button>
+    <button id="btnRight">-----right-----</button>
+
+    <!-- task 7 -->
+    <h2>_____________________________ </h2>
+
+    <div class="content2">
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div">
+            <button id="meinBtn">asisiy button</button>
+            <button id="dellBtn">dell</button>
+        </div>
+    </div>
+    <button id="uniqueBtn">Yagona asosiy button</button>
+
+    <!-- task 8 -->
+    <h2>_____________________________ </h2>
+
+    <div class="content">
+        <div class="div2">
+            <p id="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis soluta, cupiditate aperiam
+                a commodi vel fugiat eum repudiandae, accusamus impedit neque quasi eligendi suscipit laudantium
+                sint, nostrum quod tempore. Sit, sunt blanditiis eaque eius minima nesciunt assumenda? Explicabo
+                itaque eum adipisci, iure molestias inventore distinctio placeat iusto similique quod praesentium
+                corrupti dignissimos harum. Doloremque quisquam eum nostrum magni deserunt nemo fuga, placeat
+                corporis autem quod! Mollitia quibusdam illo minus dicta culpa laudantium quos perspiciatis cum,
+                eligendi quia repudiandae, sit qui a magni harum reiciendis quis facere quod quaerat non atque
+                deserunt eveniet doloremque. Et quasi vel expedita iure, cupiditate atque! </p>
+            <button class="cutBtn">Kesish</button>
+        </div>
+        <div class="div2">
+            <p id="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ratione voluptatibus
+                voluptates autem amet corrupti perferendis, dolorem, ipsum fuga cupiditate nihil delectus molestiae
+                fugiat, numquam reprehenderit necessitatibus placeat illo.</p>
+            <button class="cutBtn">Kesish</button>
+        </div>
+        <div class="div2">
+            <p id="text3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis obcaecati sequi
+                repellat voluptatibus ratione, adipisci voluptates porro non vitae ipsum?</p>
+            <button class="cutBtn">Kesish</button>
+        </div>
+    </div>
+
+    <div class="square" id="square"></div>
+    <!-- task 9 -->
+    <h2>_____________________________ </h2>
+
+    <div class="meinBtn">
+        <button class="red" id="btn5">qizil</button>
+        <button class="green" id="btn5">yashil</button>
+        <button class="blue" id="btn5">kok</button>
+    </div>
+    <div class="block4">
+    </div>
+    <!-- task 10 -->
+    <h2>_____________________________ </h2>
+
+    <div class="content4">
+        <ul id="list">
+            <li>element <button id="del">dell</button></li>
+            <li>element <button id="del">dell</button></li>
+            <li>element <button id="del">dell</button></li>
+        </ul>
+        <button id="btn7">element qoshish</button>
+    </div>
+
+    <!-- task 11 -->
+    <h2>_____________________________ </h2>
+
+    <div class="content5">
+        <div class="div3">
+            <div id="meinCard">asisiy card</div>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div3">
+            <div id="meinCard">asisiy card</div>
+            <button id="dellBtn">dell</button>
+        </div>
+        <div class="div3">
+            <div id="meinCard">asisiy card</div>
+            <button id="dellBtn">dell</button>
+        </div>
+    </div>
+    <button id="uniqueBtn2">Yagona asosiy button</button>
+
+    <!-- task 12 -->
+    <h2>_____________________________ </h2>
+    <div class="container3">
+        <div class="box red" data-id="1">
+            Kvadrat 1
+            <button class="swap-btn">Almashtirish</button>
+        </div>
+        <div class="box green" data-id="2">
+            Kvadrat 2
+            <button class="swap-btn">Almashtirish</button>
+        </div>
+        <div class="box blue" data-id="3">
+            Kvadrat 3
+            <button class="swap-btn">Almashtirish</button>
+        </div>
+    </div>
+
+    <!-- task 13 -->
+    <h2>_____________________________ ISHLAY OLOLMADIM</h2>
+    <!-- task 14 -->
+    <div class="container2">
+        <div class="block12">
+            <div class="score">0</div>
+            <button class="add-btn">ball qoshish</button>
+        </div>
+        <div class="block12">
+            <div class="score">0</div>
+            <button class="add-btn">ball qoshish</button>
+        </div>
+        <div class="block12">
+            <div class="score">0</div>
+            <button class="add-btn">ball qoshish</button>
+        </div>
+
+        <div class="total-score">Umumiy ball: 0</div>
+    </div>
+
+    <!-- task 15 -->
+    <h2>_____________________________ ISHLAY OLOLMADIM</h2>
+
+    <div class="container3">
+        <div class="block11">
+            <span>Element 1</span>
+            <div>
+                <button class="up-btn">Yuqoriga</button>
+                <button class="down-btn">Pastga</button>
+            </div>
+        </div>
+        <div class="block11">
+            <span>Element 2</span>
+            <div>
+                <button class="up-btn">Yuqoriga</button>
+                <button class="down-btn">Pastga</button>
+            </div>
+        </div>
+        <div class="block11">
+            <span>Element 3</span>
+            <div>
+                <button class="up-btn">Yuqoriga</button>
+                <button class="down-btn">Pastga</button>
+            </div>
+        </div>
+        <div class="block11">
+            <span>Element 4</span>
+            <div>
+                <button class="up-btn">Yuqoriga</button>
+                <button class="down-btn">Pastga</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
